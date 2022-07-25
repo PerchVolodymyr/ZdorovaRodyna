@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клініка "Здорова Родина"</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3622df04d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav id="navBar">
+            <h2 class="logo"><a href="index.html">Здорова Родина</a></h2>
+            <ul class="nav_links">
+                <li>
+                    <a href="#s1">Чому Ми?</a>
+                </li>
+                <li>
+                    <a href="#s2">Запис</a>
+                </li>
+                <li>
+                    <a href="#s3">Як Нас Знайти?</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-btn">
+            <h1>Піклуйтесь про своє здоров'я із нами</h1>
+            <button class="appointment-btn" type="button" onclick="window.location.href='#s2'">
+                Записатись</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="s1">Чому Ми?</h1>
+        <div class="punct">
+            <img class="checkmark" src="checkmark.png">
+            <div class="punct_text">
+                <h3>Професійність</h3>
+                <p>В клініці працюють медичні працівники з вищою акредитаційною категорією.</p>
+            </div>
+        </div>
+
+        <div class="punct">
+            <img class="checkmark" src="checkmark.png">
+            <div class="punct_text">
+                <h3>Якість</h3>
+                <p>Медичні і діагностичні послуги надаються на найновішому медичному обладнанні.</p>
+            </div>
+        </div>
+
+        <div class="punct">
+            <img class="checkmark" src="checkmark.png">
+            <div class="punct_text">
+                <h3>Швидкість</h3>
+                <p>Персонал цінує час пацієнтів і намагається надати медичну послугу максимально швидко без втрати їх якості</p>
+            </div>
+        </div>
+
+
+        <h1 id="s2">Запис</h1>
+
+        <form class="form" method="POST" action="https://formspree.io/f/xzbonovv">
+            <div>Ім'я:</div>
+            <input type="text" name="name" required="required">
+            <div>Прізвище:</div>
+            <input type="text" name="name" required="required">
+            <div>Номер телефону:</div>
+            <input name="phonenumber" type="tel" pattern="[+]{1}[0-9]{12}" placeholder="+380000000000"
+                required="required">
+            <div>Область питання:</div>
+            <select name="theme" required="required">
+                <option value="">Оберіть варіант</option>
+                <option>Внутрішні хвороби</option>
+                <option>Лабораторна і інструментальна діагностика</option>
+                <option>Скерування на вторинний рівень надання медичної допомоги</option>
+                <option>Оформлення медичної документації</option>
+                <option>Інше</option>
+            </select>
+            <div>Лікар:</div>
+            <select name="theme" required="required">
+                <option value="">Оберіть лікаря</option>
+                <option>Ольга Кінах</option>
+                <option>Катерина Грещук</option>
+                <option>Наталія Купріян</option>
+                <option>Галина Дир</option>
+                <option>Ольга Борейко</option>
+            </select>
+            <div class="infofield">Додаткова інформація:</div>
+            <textarea name="message"></textarea>
+            <div style="text-align: center;">
+                <button type="submit">Відправити</button>
+            </div>
+        </form>
+
+        <h1 id="s3">Як Нас Знайти?</h1>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d705.6084426909857!2d25.760615818916957!3d49.673733249124645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1658682877116!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer">
+            <a href="https://m.facebook.com/100071957567489/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:zdorovarodyna2021@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="tel:0964915227"><i class="fa fa-phone"></i></a>
+            <hr>
+            <p>Ⓒ 2022, Медична клініка "Здорова Родина"</p>
+        </div>
+    </div>
+</body>
